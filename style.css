@@ -105,7 +105,7 @@ span {
   text-shadow: 0 0 25px var(--main-color), 0 0 100px var(--main-color);
 }
 
-.home-content,
+.home-content
 h3:nth-of-type(2) {
   margin-bottom: 2rem;
   font-size: 5rem;
@@ -376,9 +376,9 @@ p {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  gap: 2,5rem;
+  gap: 2, 5rem;
 }
 
 .projects-container .projects-box {
