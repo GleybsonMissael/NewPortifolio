@@ -1,28 +1,29 @@
-let menuIcon = document.querySelector("#menu-icon")
-let navbar = document.querySelector(".navbar")
+// Selecionar elementos DOM
+const menuIcon = document.querySelector(".menu-icon")
+const navbar = document.querySelector(".navbar")
+const sections = document.querySelectorAll("section")
+const navlinks = document.querySelectorAll("header nav a")
 
-let sections = document.querySelectorAll("selection")
-let navlinks = document.querySelectorAll("header nav a")
+// Função para atualizar a barra de navegação ao rolar
+window.onscroll = function () {
+  const scrollY = window.scrollY
 
-window.onscroll = () => {
   sections.forEach((sec) => {
-    let top = window.scrollY
-    let offset = sec.offsetTop - 150
-    let height = sec.offsetHeight
-    let id = sec.getAttribute("id")
+    const offsetTop = sec.offsetTop
+    const offsetHeight = sec.offsetHeight
+    const sectionId = sec.getAttribute("id")
 
-    if (top >= offset && top < offset + height) {
-      navlinks.forEach((links) => {
-        links.classList.remove("active")
-        document
-          .querySelector("header nav a [href=" + id + "]")
-          .classList.add("active")
-      })
+    if (scrollY >= offsetTop && scrollY < offsetTop + offsetHeight) {
+      navlinks.forEach((links) => links.classList.remove("active"))
+      document
+        .querySelector(`header nav a[href="#${sectionId}"]`)
+        .classList.add("active")
     }
   })
 }
 
-menuIcon.onclick = () => {
+// Função para alternar a visibilidade da barra de navegação
+menuIcon.onclick = function () {
   menuIcon.classList.toggle("bx-x")
   navbar.classList.toggle("active")
 }
