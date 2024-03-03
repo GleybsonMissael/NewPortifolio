@@ -186,7 +186,7 @@ p {
 }
 
 .text-animation span:before {
-  content: "Youtuber";
+  content: "Analista de Sistemas";
   color: var(--main-color);
   animation: words 20s infinite;
 }
@@ -209,23 +209,23 @@ p {
 @keyframes words {
   0%,
   20% {
-    content: "Youtuber";
+    content: "Analista de Sistemas";
   }
   21%,
   40% {
-    content: "Web design";
+    content: "Desenvolvedor Web";
   }
   41%,
   60% {
-    content: "web developer";
+    content: "Desenvolvedor back-end";
   }
   61%,
   80% {
-    content: "Blogguer";
+    content: "Desenvolvedor Banco de dados";
   }
   81%,
   100% {
-    content: "Gamer";
+    content: "Analista BI";
   }
 }
 
@@ -308,6 +308,84 @@ p {
   right: -8px;
   animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
+
+/* .experience {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    top: 0;
+    margin: 2rem;
+
+}
+
+.knowledge {
+    background-color: var(--azul-claro);
+    border: 2px solid var(--azul-escuro);
+    border-radius: 1rem;
+    box-shadow: 4px 4px 1rem black;
+    width: 50%;
+    
+
+    & h2 {
+        color: var(--branco);
+        text-shadow: 1px 1px 2px var(--azul-escuro);
+        margin: 1rem;
+        font-size: 4rem;
+    }
+}
+
+.devicon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.devicon i {
+    font-size: 5rem;
+    color: var(--laranja);
+    transition: 0.3s;
+    padding-bottom: 1rem;
+}
+
+.devicon i:hover {
+    color: var(--branco);
+    text-shadow: 2px 2px 4px var(--laranja);
+}
+
+.education {
+    background-color: var(--azul-claro);
+    border: 2px solid var(--azul-escuro);
+    border-radius: 1rem;
+    box-shadow: 4px 4px 1rem black;
+    align-items: first baseline;
+    width: 40%;
+
+    & h2 {
+        color: var(--branco);
+        text-shadow: 1px 1px 2px var(--azul-escuro);
+        margin: 1rem;
+        font-size: 4rem;
+    }
+
+    & h5 {
+        font-size: 2rem;
+        color: var(--branco);
+        text-shadow: 1px 1px 2px var(--azul-escuro);
+    }
+}
+
+.education li {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.education i {
+    font-size: 5rem;
+    color: var(--laranja);
+    text-shadow: 1px 1px 2px var(--azul-escuro);
+} */
 
 .services h2 {
   margin-bottom: 5rem;
@@ -509,6 +587,7 @@ p {
   border-radius: 50%;
   margin: 0 10px;
   transition: 0.3s ease;
+  align-items: center;
 }
 
 .footer .social a:hover {
@@ -583,10 +662,10 @@ p {
     border-top: 0.1rem solid rgba(0, 0, 0, 0.105);
     display: none;
   }
-  .navbar.active{
+  .navbar.active {
     display: block;
   }
-  .navbar a{
+  .navbar a {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
@@ -595,7 +674,7 @@ p {
     flex-direction: column;
     margin: 5rem 4rem;
   }
-  .home-content h3{
+  .home-content h3 {
     font-size: 2.6rem;
   }
   .home-content h1 {
@@ -623,6 +702,6 @@ p {
     margin-bottom: 3rem;
   }
   .projects-container {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }

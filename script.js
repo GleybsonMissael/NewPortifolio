@@ -21,9 +21,3 @@ window.onscroll = function () {
     }
   })
 }
-
-// Função para alternar a visibilidade da barra de navegação
-menuIcon.onclick = function () {
-  menuIcon.classList.toggle("bx-x")
-  navbar.classList.toggle("active")
-}
