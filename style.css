@@ -213,11 +213,11 @@ span {
   }
   41%,
   60% {
-    content: "Desenvolvedor back-end";
+    content: "Desenvolvedor Back-End";
   }
   61%,
   80% {
-    content: "Desenvolvedor Banco de dados";
+    content: "Desenvolvedor Banco de Dados";
   }
   81%,
   100% {
@@ -318,6 +318,7 @@ span {
   border: 2px solid var(--main-color);
   border-radius: 1rem;
   box-shadow: 4px 4px 1rem var(--main-color);
+  padding: 3rem;
 }
 
 .experience {
@@ -334,7 +335,7 @@ span {
   border: 2px solid var(--main-color);
   border-radius: 1rem;
   box-shadow: 4px 4px 1rem var(--main-color);
-
+  padding: 0 3rem;
   & span {
     color: var(--main-color);
     text-shadow: 1px 1px 2px var(--text-color);
@@ -369,6 +370,8 @@ span {
   border: 2px solid var(--main-color);
   border-radius: 1rem;
   box-shadow: 4px 4px 1rem var(--main-color);
+  padding: 0 3rem;
+
   & h2 {
     color: var(--branco);
     text-shadow: 1px 1px 2px var(--azul-escuro);
@@ -408,6 +411,7 @@ span {
 }
 
 .service-container .services-box {
+  display: flexbox;
   flex: 1 1 40rem;
   background: var(--second-bg-color);
   padding: 3rem 2rem 4rem;
@@ -416,6 +420,7 @@ span {
   border: 0.2rem solid var(--bg-color);
   cursor: pointer;
   transition: 0.4s ease;
+  height: 35rem;
 }
 
 .service-container .services-box:hover {
@@ -463,7 +468,7 @@ span {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  gap: 2, 5rem;
+  gap: 5rem;
 }
 
 .projects-container .projects-box {
